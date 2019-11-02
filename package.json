@@ -1,0 +1,32 @@
+{
+  "name": "mern_shopping_list",
+  "version": "1.0.0",
+  "description": "\"Shopping list app built with the mern stack\"",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client \""
+  },
+  "keywords": [],
+  "author": "Daniel H Tannehill",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "thefutureseer"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "create-react-app": "^3.2.0",
+    "express": "^4.17.1",
+    "mernapp": "file:client",
+    "mongoose": "^5.7.3",
+    "yarn": "^1.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
