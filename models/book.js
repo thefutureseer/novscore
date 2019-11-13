@@ -8,6 +8,10 @@ const BookSchema = new Schema({
    type: String,
    required: true
  },
+//  course: {
+//    type: String,
+//    required: true
+//  },
   date: {
     type: Date,
     default: Date.now

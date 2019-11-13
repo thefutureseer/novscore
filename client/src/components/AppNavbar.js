@@ -26,13 +26,13 @@ class AppNavbar extends Component {
       <div>
         <Navbar color="dark" dark expand="sm" className="mb-5">
         <Container>
-          <NavbarBrand href="/">Search API</NavbarBrand>
+          <NavbarBrand href="/">Game List</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="https://github.com/thefutureseer">
-                  MERN STACK App
+                  MERN STACK Novscore keeper App
                 </NavLink>
               </NavItem>
             </Nav>

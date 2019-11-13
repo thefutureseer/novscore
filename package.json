@@ -24,6 +24,8 @@
     "express": "^4.17.1",
     "mernapp": "file:client",
     "mongoose": "^5.7.3",
+    "prop-types": "^15.7.2",
+    "react-redux-form": "^1.16.14",
     "yarn": "^1.19.0"
   },
   "devDependencies": {

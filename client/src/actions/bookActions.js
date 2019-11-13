@@ -1,8 +1,5 @@
 import axios from 'axios';
 import { GET_BOOKS, ADD_BOOK, DELETE_BOOK, BOOKS_LOADING } from './types';
-//import { returnErrors } from './errorActions';
-//import dispatch from 'prop-types';
-
 
 export const getBooks = () => dispatch => {
  dispatch(setBooksLoading());

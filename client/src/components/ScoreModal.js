@@ -13,7 +13,7 @@ import { connect } from 'react-redux';
 import { addBook } from '../actions/bookActions';
 import uuid from 'uuid';
 
-class BookModal extends Component {
+class ScoreModal extends Component {
  state = {
    modal: false,
    name: ''
@@ -51,26 +51,27 @@ class BookModal extends Component {
             color="dark"
             style={{marginButton: '2rem'}}
             onClick={this.toggle}>
-              Add Player
+              Add (not score but) Second Option
        </Button>
        <Modal 
          isOpen={this.state.modal}
          toggle={this.toggle} >
         <ModalHeader toggle={this.toggle} >
-          Add Player and Course
+          Add Info
         </ModalHeader>
         <ModalBody>
           <Form onSubmit={this.onSubmit}>
             <FormGroup>
               <Label for="book">
-                Keep track of everybodys score:
+                Option aside from everybodys score:
               </Label>
               <Input 
                 type="text"
                 name="name"
-              //  id="book"
+                id="book"
                 placeholder="Player Name"
                 onChange={this.onChange}
+                
                 />
                 {/* <Input 
                 type="text"
@@ -84,7 +85,7 @@ class BookModal extends Component {
                 color="dark"
                 style={{marginTop: '2rem'}}
                 block >
-                Add Player
+                Add A Seperate option
               </Button>
             </FormGroup>
           </Form>
@@ -100,4 +101,4 @@ const mapStateToProps = state => ({
   book: state.book
 })
 
-export default connect(mapStateToProps, { addBook })(BookModal);
+export default connect(mapStateToProps, { addBook })(ScoreModal);
